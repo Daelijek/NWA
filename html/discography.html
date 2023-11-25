@@ -19,7 +19,7 @@
 		crossorigin="anonymous"></script>
 
 	<!-- !links -->
-	<link rel="stylesheet" href="../css/mainPage.css">
+	<link rel="stylesheet" href="../css/discography.css">
 	<link rel="icon" href="../img/загрузка.png">
 	<title>Discography :: N.W.A</title>
 </head>
@@ -28,7 +28,7 @@
 
 	<header class="header">
 		<div class="container">
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
 				<div class="container">
 
 					<a class="navbar-brand" href="mainPage.html"><img class="navbar_img" src="../img/загрузка.png"
@@ -78,7 +78,62 @@
 		</div>
 	</header>
 
-	<main class="main"></main>
+	<main class="main">
+
+		<div class="firstContent" id="aboutNWA">
+			<div class="container">
+				<div class="content_info col-8">
+					<h1 class="content_title">Introduction to N.W.A.'s Discography</h1>
+					<p class="content_text">
+						<b>N.W.A.</b> - is a group that not only changed the face of hip-hop but also exerted a profound influence
+						on culture and society at large. They became an integral part of the genre's evolution, attaining success
+						and remaining iconic due to their uncompromising style and lyrics that reflected street reality and social
+						issues. N.W.A.'s discography isn't just musical heritage but a vivid map defining the strength and influence
+						of hip-hop on culture.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="secondContent" id="aboutNWA">
+			<div class="container row">
+				<div class="content_info col-8">
+					<h1 class="content_title">"N.W.A. and the Posse" (1987)</h1>
+					<p class="content_text">
+						The group's debut album, "N.W.A. and the Posse," served as the starting point for their career. A mix of
+						tracks presented not only by the group but also by other artists showcased the emerging style of N.W.A. It
+						laid the groundwork for future works, reflecting a harsh, straightforward approach to portraying life in
+						Compton. Tracks like "Boyz-n-the-Hood" became hits and sparked numerous debates, reflecting the reality of
+						life in black neighborhoods and raising questions about social justice.
+					</p>
+				</div>
+				<div class="content_img col-4">
+					<!-- Добавьте атрибут data-toggle и data-target для открытия модального окна -->
+					<img src="../img/image4.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="imageModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Заголовок модального окна -->
+					<div class="modal-header">
+						<h4 class="modal-title">Увеличенное изображение</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Тело модального окна с изображением и аудиоплеером -->
+					<div class="modal-body">
+						<img src="../img/image4.jpg" alt="">
+						<!-- Добавьте кнопку для воспроизведения/паузы аудиотрека -->
+						<button id="playButton">Play Audio</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="scrollToTopBtn" onclick="scrollToTop()"><img src="../img/up-arrow.png" alt=""></div>
+	</main>
 
 	<footer class="footer">
 		<div class="container">
@@ -107,11 +162,32 @@
 							</div>
 							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
 						</form>
+						<div class="popup_chat">
+							<!-- Кнопка для открытия pop-up окна комментариев -->
+							<button onclick="openComments()">Open Comments</button>
+
+							<!-- Pop-up окно комментариев -->
+							<div id="commentsPopup" class="comments-popup">
+								<div class="comment-area" id="commentArea">
+									<!-- Здесь будет отображаться список комментариев -->
+								</div>
+								<input type="text" id="commentInput" class="comment-input" placeholder="Enter your comment...">
+								<button onclick="submitComment()" class="comment-btn">Submit</button>
+								<button onclick="closeComments()" class="comment-btn">Close</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Подключение скрипта Bootstrap для вкладок -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="../js/discography.js"></script>
 </body>
 
 </html>
