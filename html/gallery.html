@@ -107,10 +107,25 @@
 							</div>
 							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
 						</form>
+						<div class="popup_chat">
+							<!-- Кнопка для открытия pop-up окна комментариев -->
+							<button onclick="openComments()">Open Comments</button>
+
+							<!-- Pop-up окно комментариев -->
+							<div id="commentsPopup" class="comments-popup">
+								<div class="comment-area" id="commentArea">
+									<!-- Здесь будет отображаться список комментариев -->
+								</div>
+								<input type="text" id="commentInput" class="comment-input" placeholder="Enter your comment...">
+								<button onclick="submitComment()" class="comment-btn">Submit</button>
+								<button onclick="closeComments()" class="comment-btn">Close</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</footer>
 </body>
 
