@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--! fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Phudu:wght@700&family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+
+	<!-- !Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+	<!-- !links -->
+	<link rel="stylesheet" href="../css/mainPage.css">
+	<link rel="icon" href="../img/загрузка.png">
+	<title>Main :: N.W.A</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+				<div class="container">
+
+					<a class="navbar-brand" href="mainPage.html"><img class="navbar_img" src="../img/загрузка.png"
+							alt="n.w.a"></a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									MAIN
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#aboutNWA">About N.W.A</a></li>
+									<li><a class="dropdown-item" href="#news">News</a></li>
+									<li><a class="dropdown-item" href="#facts">Facts</a></li>
+									<li><a class="dropdown-item" href="#contacts">Contacts</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="history.html">HISTORY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="members.html">MEMBERS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="discography.html">DISCOGRAPHY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="gallery.html">GALLERY</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="intro">
+			<div class="container">
+				<div class="intro_video">
+					<video autoplay muted loop class="video_bg">
+						<source src="../video/introMainPage.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="row">
+					<div class="intro_content">
+						<h1 class="title">N.W.A</h1>
+						<p class="text">Welcome to the world of N.W.A, a legendary hip-hop group that has left an indelible mark on
+							musical and cultural history. Their bright and provocative lyrics, fearless atmosphere and bold ideas
+							turned
+							the idea of hip-hop and made a significant contribution to the development of the music industry.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="firstContent" id="aboutNWA">
+			<div class="container">
+				<div class="content_info col-8">
+					<h1 class="content_title">About N.W.A</h1>
+					<p class="content_text">
+						<b>N.W.A </b>(abbreviation for Niggaz With Attitudes) is an American hip hop
+						group from Compton, California, which many consider one of the founders of the gangsta rap subgenre.
+						This
+						group existed from 1987 to 1991, and caused a lot of controversy due to the frank nature of their texts.
+						Subsequently, the band was banned from many major US radio stations and even their tours were sometimes
+						banned, but still the band has sold about 30 million copies of their CDs in the USA alone to date. Their
+						first album, Straight Outta Compton, marked the beginning of a new era of gangsta rap, as their
+						creativity
+						and raising social issues were revolutionary within the genre.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="secondContent" id="news">
+			<div class="container">
+				<div class="content_info">
+					<h1 class="content_title">LATEST NEWS</h1>
+					<div class="content_text row">
+
+						<div class="col-md-4">
+							<div class="card text" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
+								<div style="position: relative;">
+									<img src="../img/NWA_image_card.webp" class="card-img-top" alt="Grokking Algorithms">
+									<div class="card-text description">
+										<p>The band N.W.A is pleased to announce the upcoming release of their new album "N.W.A Forever".
+											Fans
+											can expect a return to the roots of the famous style and new tracks that take us into the world of
+											the characteristic sound of N.W.A.</p>
+									</div>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">N.W.A Forever</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card text" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
+								<div style="position: relative;">
+									<img src="../img/image1.jpg" class="card-img-top" alt="Grokking Algorithms">
+									<div class="card-text description">
+										<p>In honor of the 35th anniversary of the release of the legendary album "Straight Outta Compton",
+											the members of N.W.A are preparing to launch a world tour. Stay tuned for information about dates
+											and venues of concerts.</p>
+									</div>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">Invitation to the Tour</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card text" onmouseover="showCardDescription(this)" onmouseout="hideCardDescription(this)">
+								<div style="position: relative;">
+									<img src="../img/ice-cube-straight-outta-compton1.jpg" class="card-img-top" alt="Grokking Algorithms">
+									<div class="card-text description">
+										<p>Ice Cube shared his plans for the future in a recent interview. Solo projects, participation in a
+											film dedicated to the history of the band — all this is only part of what awaits fans from one of
+											the founders of N.W.A.</p>
+									</div>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">Interview with Ice Cube</h3>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="thirdContent" id="facts">
+				<div class="container">
+					<div class="content_info col-12">
+						<h1 class="content_title">INTERESTING FACTS</h1>
+
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										"Straight Outta Compton"
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body"> The band's famous debut album, released in 1988, became a catalyst for
+										gangsta rap.
+										In tracks like "F*** Tha
+										Police", N.W.A expressed their position on social issues, causing excitement and questioning the
+										status quo.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+										The scandalous "F* Tha Police"**
+									</button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Release of the track "F*** Tha Police" led to serious controversies. The
+										song aroused
+										the indignation of the
+										authorities, questioning police brutality and systemic racism. This moment singled out N.W.A as
+										fighters for
+										freedom of speech.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+										Breakup and solo careers
+									</button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">The breakup of N.W.A in the early 1990s did not stop the influence of the
+										participants. Dr. Dre and Ice Cube
+										achieved huge success in solo projects, rising to the top of the hip-hop scene. Their individual
+										creative
+										feats continue to inspire a new generation of artists.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+										"Efil4zaggin" - The last album of N.W.A
+									</button>
+								</h2>
+								<div id="flush-collapseFour" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">"Efil4zaggin" (read as "N****z4Life") became the last studio album of the
+										band. Released in 1991, it also
+										became N.W.A's first and only album after Ice Cube left the lineup. Despite the difficulties, the
+										album
+										became a commercial success.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+										Legacy and influence
+									</button>
+								</h2>
+								<div id="flush-collapseFive" class="accordion-collapse collapse"
+									data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">The legacy of N.W.A in the world of hip-hop and music is difficult to
+										overestimate. The band not only opened
+										new horizons in sound, but also became the voice of the generation, expressing its aspirations,
+										struggles
+										and experiences. Their influence continues to shape modern hip-hop and inspire artists in various
+										genres.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="scrollToTopBtn" onclick="scrollToTop()"><img src="../img/up-arrow.png" alt=""></div>
+	</main>
+
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-form">
+						<div class="footer_title">
+							Quick Contact
+						</div>
+						<form action="#" class="footer-form" id="contactForm">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name" id="name">
+								<div class="error-message" id="nameError"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email Address" id="email">
+								<div class="error-message" id="emailError"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Subject" id="subject">
+								<div class="error-message" id="subjectError"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" cols="21" rows="8" placeholder="Message" id="message"></textarea>
+								<div class="error-message" id="messageError"></div>
+							</div>
+							<button type="button" class="btn btn-primary" id="sendButton">SEND</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/mainPage.js"></script>
+
+</html>
