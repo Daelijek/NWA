@@ -1,0 +1,258 @@
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Phudu', sans-serif;
+font-family: 'Roboto', sans-serif; */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*! scroll top */
+#scrollToTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTopBtn img {
+	width: 50px;
+	height: auto;
+}
+
+#scrollToTopBtn:hover {
+	opacity: 1;
+}
+
+/*! header */
+
+.navbar {
+	border-top: 1px solid rgb(226, 20, 20);
+	font-family: 'Phudu', sans-serif;
+	font-size: 20px;
+}
+
+.nav-link {
+	position: relative;
+}
+
+.nav-link::after {
+	content: '';
+	opacity: 0;
+	transition: all 0.4s;
+	height: 2px;
+	width: 100%;
+	background-color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-link:hover::after {
+	opacity: 1;
+}
+
+.header .navbar_img {
+	width: 100px;
+	height: auto;
+}
+
+.navbar-collapse {
+	justify-content: center;
+}
+
+.dropdown-menu .dropdown-item:active {
+	background-color: rgb(226, 20, 20);
+}
+
+/*! firstContent */
+
+.firstContent {
+	background: rgb(209, 209, 209);
+	background: linear-gradient(180deg, rgba(209, 209, 209, 1) 38%, rgba(130, 130, 130, 1) 100%);
+	padding-top: 170px;
+	padding-bottom: 100px;
+}
+
+.firstContent .content_title {
+	font-family: 'Phudu', sans-serif;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+
+.firstContent .content_text {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/*!Second Content */
+
+.secondContent {
+	background: rgb(209, 209, 209);
+	background: linear-gradient(0deg, rgba(209, 209, 209, 1) 38%, rgba(130, 130, 130, 1) 100%);
+}
+
+.secondContent {
+	padding-bottom: 100px;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.secondContent img {
+	width: 380px;
+	height: auto;
+}
+
+.secondContent .content_title {
+	font-family: 'Phudu', sans-serif;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+
+.secondContent .content_text {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/*! footer */
+
+.footer {
+	background-color: #304054;
+	padding: 80px 0 125px;
+}
+
+.footer_inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_title {
+	font-size: 16px;
+	color: #d0e4ff;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
+}
+
+.footer-form {
+	width: 263px;
+}
+
+.footer-form textarea,
+.footer-form input {
+	border: 1px solid rgba(99, 131, 179, 0.401);
+	background-color: transparent;
+	height: 38px;
+	display: block;
+	width: 100%;
+	padding: 0 12px;
+	color: #718db2;
+	font-size: 11px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.footer button {
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	border: none;
+	background-color: #2575e7;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
+	color: #718db2;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.footer-form textarea {
+	padding-top: 12px;
+	resize: none;
+	height: 85px;
+	margin-bottom: 10px;
+}
+
+.error-message {
+	color: red;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+/*! Стили для pop-up окна комментариев */
+
+.popup_chat {
+	margin-top: 20px;
+}
+
+.comments-popup {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	width: 300px;
+	max-height: 400px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.comment-area {
+	height: 240px;
+	overflow-y: auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+.comment-input {
+	width: calc(100% - 20px);
+	margin: 5px 10px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.comment-btn {
+	width: calc(100% - 20px);
+	margin: 5px 10px;
+	padding: 8px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.comment-btn:hover {
+	background-color: #0056b3;
+}
